@@ -20,15 +20,8 @@ module.exports = {
           name: 'img/[name].[ext]',
         },
       },
-      {
-        test: /\.ico$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]',
-        },
       },
     ],
-  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
