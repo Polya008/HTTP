@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "live-server src",
+    "start": "webpack-dev-server --mode development",
+    "test": "jest",
+    "lint": "eslint .",
+    "build": "webpack --mode production",
+    "test_2": "jest --testPathPattern=./src/",
+    "coverage": "jest --testPathPattern=./src/ --coverage",
+    "e2e": "jest --testPathPattern=./e2e/"
   },
   "author": "",
   "license": "ISC",
