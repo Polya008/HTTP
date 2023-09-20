@@ -20,6 +20,6 @@ module.exports = merge(common, {
 
   plugins: [
     // Only update what has changed on hot reload
-    new webpack.HotModuleReplacementPlugin(),
+    
   ],
 });
